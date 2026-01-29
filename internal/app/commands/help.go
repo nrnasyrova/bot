@@ -6,6 +6,7 @@ func (c *Commander) Help(inputMessage *tgbotapi.Message) tgbotapi.MessageConfig 
 
 	return tgbotapi.NewMessage(inputMessage.Chat.ID,
 		"/help - help\n"+
-			"/list - list products",
+			"/list - list products\n"+
+			"/get - get by id",
 	)
 }
